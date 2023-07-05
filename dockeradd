@@ -1,0 +1,7 @@
+FROM ubuntu
+MAINTAINER avd
+
+ADD https://get.jenkins.io/war-stable/2.401.1/jenkins.war /
+
+
+

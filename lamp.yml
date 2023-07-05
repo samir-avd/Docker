@@ -1,0 +1,19 @@
+---
+version: '3.8'
+services:
+  myavdsql1:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: test123
+  myapache:
+    image: httpd
+    ports:
+      - 90:80
+    links:
+      - myavdsql1:mysql
+  myphp:
+    image: php:7.2-apache
+    links:
+      - myavdsql1:mysql
+      - myapache:httpd
+...

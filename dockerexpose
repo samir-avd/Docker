@@ -1,0 +1,3 @@
+FROM nginx
+MAINTAINER avd
+EXPOSE 90

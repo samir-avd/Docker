@@ -1,0 +1,4 @@
+FROM ubuntu
+MAINTAINER avd
+COPY ./myscript.sh /
+RUN ./myscript.sh

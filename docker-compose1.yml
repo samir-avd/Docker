@@ -1,0 +1,14 @@
+---
+version: '3.8'
+services:
+  myavdsql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: test123
+  myavdwordpress:
+    image: wordpress
+    ports:
+      - 8090:80
+    links:
+      - myavdsql:mysql
+...

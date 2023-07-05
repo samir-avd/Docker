@@ -1,0 +1,7 @@
+FROM ubuntu
+MAINTAINER avd
+
+RUN apt-get update
+RUN apt-get install maven -y
+
+RUN apt-get install tree -y

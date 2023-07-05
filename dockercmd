@@ -1,0 +1,6 @@
+FROM ubuntu
+MAINTAINER avd
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+EXPOSE 80

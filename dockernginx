@@ -1,0 +1,6 @@
+FROM ubuntu
+MAINTAINER avd
+RUN apt-get update
+RUN apt-get install nginx -y
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "deamon off;"]
+EXPOSE 80
